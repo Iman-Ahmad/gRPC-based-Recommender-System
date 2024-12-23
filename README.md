@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mini Project: gRPC-based Recommender System
 
 This project demonstrates a microservice architecture using gRPC and Protocol Buffers (protobuf). The system consists of two services: a `marketplace` service and a `recommendations` service, which communicate with each other using gRPC.
@@ -34,3 +35,6 @@ To get started with the project, follow these steps:
    ```bash
    git clone https://github.com/Iman-Ahmad/gRPC-based-Recommender-System.git
    cd gRPC-based-Recommender-System
+=======
+# gRPC-based-Recommender-System
+>>>>>>> c891980b9242197f1648169601481a1940d8ff15
