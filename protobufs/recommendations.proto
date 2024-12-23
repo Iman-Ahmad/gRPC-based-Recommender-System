@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package recommendations;
+
+// Enum for book categories
+enum BookCategory {
+    MYSTERY = 0;
+    SCIFI = 1;
+    FANTASY = 2;
+    NONFICTION = 3;
+    ROMANCE = 4;
+}
+
+// Request message
+message RecommendationRequest {
+    int32 user_id = 1;
+    BookCategory category = 2;
+    int32 max_results = 3;
+}
+
+// Response message
+message RecommendationResponse {
+    repeated string recommendations = 1;
+}
+
+// The recommendation service definition
+service RecommendationService {
+    rpc Recommend(RecommendationRequest) returns (RecommendationResponse);
+}
